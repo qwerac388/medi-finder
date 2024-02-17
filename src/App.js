@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import styles from "./App.module.css";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import PageNotFound from "./Components/PageNotFound";
+import AboutUsPage from "./Components/AboutUsPage";
 import Ambulance from "./Components/Ambulance";
 import Opinion from "./Components/Opinion";
 import WaitTime from "./Components/WaitTime";
+import ServicePage from "./Components/ServicePage/ServicePage";
 
 function App() {
   const [userLocation, setUserLocation] = useState(null);
