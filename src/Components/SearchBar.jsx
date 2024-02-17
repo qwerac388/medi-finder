@@ -2,8 +2,6 @@ import React from "react";
 import styles from "../App.module.css";
 
 function SearchBar({ searchTerm, setSearchTerm }) {
-  // const [searchTerm, setSearchTerm] = useState("");
-
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value); // Pass the search term to the parent componen廿
   };

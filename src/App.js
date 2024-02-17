@@ -7,6 +7,9 @@ import Ambulance from "./Components/Ambulance";
 import Opinion from "./Components/Opinion";
 import WaitTime from "./Components/WaitTime";
 import ServicePage from "./Components/ServicePage/ServicePage";
+import GeneralPage from "./Components/GeneralPage";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   const [userLocation, setUserLocation] = useState(null);
@@ -22,7 +25,6 @@ function App() {
       <div className={styles["navBar-homepage"]}>
         <nav>
           {/* Links to navigate between pages */}
-
           <Link to="/about-us"> 主要頁</Link>
           <Link to="/MediFinder"> 急症室</Link>
           <Link to="/service">專科服務</Link>

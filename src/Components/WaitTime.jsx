@@ -151,7 +151,6 @@ function WaitTime({
   // On Click function for hospital container
   const handleHospitalClick = (hospital) => {
     // Call the onHospitalSelect function provided by the parent component
-
     handleHospitalSelect({
       latitude: hospital.latitude,
       longitude: hospital.longitude,
@@ -166,7 +165,6 @@ function WaitTime({
         setIsFetching2(true);
         const res = await fetch(API2);
         const data = await res.json();
-
         // Create an array to hold all hospital names and contact numbers
         const hospitalsData = data.features.map((feature) => {
           const properties = feature.properties;
@@ -273,10 +271,6 @@ function WaitTime({
   const deg2rad = (deg) => {
     return deg * (Math.PI / 180);
   };
-
-  // console.log(hospitals);
-  // console.log(distances);
-  // console.log(characters);
 
   return (
     <div className={styles["main-container"]}>
