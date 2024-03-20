@@ -2,9 +2,11 @@
 
 ## Overview
 
-MediFinder is a React-based web application designed to help users in finding 24-hour emergency rooms, specialist services, and general medical services in nearby Hong Kong public hospitals. Our platform provides real-time geolocation services to ensure you can quickly find the nearest medical assistance.
+MediFinder is a React-based web application designed to help users find 24-hour emergency rooms, specialist services, and general medical services in nearby Hong Kong public hospitals. Utilizing real-time data fetched directly from the Hong Kong Hospital Authority's API, our platform provides accurate, up-to-date information and real-time geolocation services to ensure you can quickly find the nearest medical assistance. This integration with the official API is a cornerstone feature that ensures reliability and relevance of the medical information provided.
 
 ## Features
+
+- **Powered by Hong Kong Hospital Authority API**: All three main pages of MediFinder—emergency room locator, specialist services information, and general medical services—use the Hong Kong Hospital Authority's API for real-time data fetching, ensuring the information is current and accurate.
 
 - **Geolocation Services**: Detect your current location to find the closest emergency room and specialist services available.
 
@@ -37,8 +39,11 @@ MediFinder is a React-based web application designed to help users in finding 24
 ## Error Handling
 
 - **Page Not Found**: In case a user navigates to an unknown route, our `PageNotFound` component provides a user-friendly message, guiding them back to the functional parts of the application.
+
   ![PageNotFound Preview](/preview-pictures/PageNotFound1.png)
+
 - **Location Permissions**: If a user declines to share their geolocation, the application will display a custom error message prompting them to allow location access to utilize geolocation services fully.
+
   ![ErrorMsg Preview](/preview-pictures/ErrorMsg1.png)
 
 ## Usage
